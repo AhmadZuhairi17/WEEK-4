@@ -1,0 +1,87 @@
+package myAssignment;
+
+import java.util.Scanner;
+
+class Assignment1B {
+
+	public static void main(String[] args) {
+		
+		Scanner in=new Scanner(System.in);
+		int num_of_item,quantity1,quantity2,quantity3;
+		double price1,price2,price3,total_price1,total_price2,total_price3,discount,price_after_discount,total_whole;
+		
+		System.out.print("Enter the number of items :");
+		num_of_item=in.nextInt();
+		
+		if(num_of_item==1) {
+			System.out.print("Enter price of the item : RM");
+			price1=in.nextInt();
+			System.out.print("Enter quantity of the item :");
+			quantity1=in.nextInt();
+			total_price1=price1*quantity1;
+			if (total_price1>=100) {
+				discount=0.2*total_price1;
+			    price_after_discount=total_price1-discount;}
+			else {
+				discount=0.1*total_price1;
+			    price_after_discount=total_price1-discount;}
+			System.out.println("\nTotal price        : " + total_price1);
+			System.out.println("Discount received  : " + discount);
+			System.out.println("Price to be paid   : " + price_after_discount);}
+					
+		else if (num_of_item==2) {
+			System.out.print("Enter price of the first item : RM");
+			price1=in.nextInt();
+			System.out.print("Enter quantity of the first item :");
+			quantity1=in.nextInt();
+			total_price1=price1*quantity1;
+			System.out.print("\nEnter price of the second item : RM");
+			price2=in.nextInt();
+			System.out.print("Enter quantity of the second item : ");
+			quantity2=in.nextInt();
+			total_price2=price2*quantity2;
+			total_whole=total_price1+total_price2;
+			if(total_whole>=100) {
+				discount=0.2*total_whole;
+			    price_after_discount=total_whole-discount;}
+			else {
+				discount=0.1*total_whole;
+			    price_after_discount=total_whole-discount;}
+			System.out.println("\nTotal price        : " + total_whole);
+			System.out.println("Discount received  : " + discount);
+			System.out.println("Price to be paid   : " + price_after_discount);}
+		
+		else if (num_of_item==3) {
+			System.out.print("Enter price of the first item : RM");
+			price1=in.nextInt();
+			System.out.print("Enter quantity of the first item :");
+			quantity1=in.nextInt();
+			total_price1=price1*quantity1;
+			System.out.print("\nEnter price of the second item : RM");
+			price2=in.nextInt();
+			System.out.print("Enter quantity of the second item :");
+			quantity2=in.nextInt();
+			total_price2=price2*quantity2;
+			System.out.print("\nEnter price of the third item : RM");
+			price3=in.nextInt();
+			System.out.print("Enter quantity of the third item :");
+			quantity3=in.nextInt();
+			total_price3=price3*quantity3;
+			total_whole=total_price1+total_price2+total_price3;
+			if(total_whole>=100) {
+				discount=0.2*total_whole;
+			    price_after_discount=total_whole-discount;}
+			else {
+				discount=0.1*total_whole;
+			    price_after_discount=total_whole-discount;}
+			System.out.println("\nTotal price        : " + total_whole);
+			System.out.println("Discount received  : " + discount);
+			System.out.println("Price to be paid   : " + price_after_discount);}
+		
+		else
+			System.out.println("You have entered invalid number of item! ");
+		}
+		  
+	}
+
+
