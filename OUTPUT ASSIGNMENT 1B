@@ -1,0 +1,13 @@
+Enter the number of items :3
+Enter price of the first item : RM150
+Enter quantity of the first item :2
+
+Enter price of the second item : RM50
+Enter quantity of the second item :3
+
+Enter price of the third item : RM30
+Enter quantity of the third item :1
+
+Total price        : 480.0
+Discount received  : 96.0
+Price to be paid   : 384.0
